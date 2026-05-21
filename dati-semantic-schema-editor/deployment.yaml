@@ -36,10 +36,10 @@ spec:
           configMap:
             name: configmap-schema-editor
             items:
-            - key: config.js
-              path: config.js
+              - key: config.js
+                path: config.js
       containers:
-        - image: ghcr.io/teamdigitale/dati-semantic-schema-editor:20251007-13-a93bb53
+        - image: ghcr.io/teamdigitale/dati-semantic-schema-editor:0.1.2
           imagePullPolicy: Always
           name: dati-semantic-schema-editor
           ports:
@@ -66,5 +66,5 @@ spec:
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
-      securityContext: { }
+      securityContext: {}
       terminationGracePeriodSeconds: 75
